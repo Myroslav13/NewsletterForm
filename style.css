@@ -162,6 +162,7 @@ label {
     }
 
     .after-message {
+        position: relative;
         display: none;
         background-color: white;
         padding: 35px;
@@ -175,7 +176,14 @@ label {
         box-sizing: border-box;
     }
 
+    .after-message img {
+        width: 60px;
+        margin-top: 70px;
+    }
+
     .after-message button {
-        top: 0;
+        position: absolute;
+        bottom: 30px;
+        width: 80%;
     }
 }

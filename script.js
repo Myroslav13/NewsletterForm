@@ -27,10 +27,8 @@ function submitBtnClicked(event) {
 
     if(!isBlank) {
         container.style.display = "none"
-        if(){
-            afterMessage.style.display = "block"
-        } else {}
-        
+        afterMessage.style.display = "block"
+
         afterMessageText.innerHTML = `A confirmation email has been sent to <b>${emailInput.value}</b>. 
             Please open it and click the button inside to confirm your subscription.`
     }
