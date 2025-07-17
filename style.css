@@ -25,6 +25,7 @@ body {
     color: #232742;
     height: 400px;
     font-family: 'RobotoRegular', sans-serif;
+    flex-direction: row-reverse;
 }
 
 button, input {
@@ -152,13 +153,24 @@ label {
     justify-content: space-between;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     .container {
-        display: block;
+        display: flex;
+        flex-direction: column;
         margin: 0;
+        padding: 0;
         height: 100%;
         width: 100%;
         border-radius: 0px;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .left-side-img {
+        margin: 0;
+        padding: 0;
     }
 
     .after-message {
@@ -185,5 +197,19 @@ label {
         position: absolute;
         bottom: 30px;
         width: 80%;
+    }
+    
+    li img {
+        width: 20px !important;
+    }
+
+    .form-container {
+        padding: 20px 20px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .left-side-img {
+        object-fit: cover;
     }
 }

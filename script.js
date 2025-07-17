@@ -18,7 +18,7 @@ function submitBtnClicked(event) {
     warning.style.display = "none"
 
     for(let key in data) {
-        if(data[key] === "") {
+        if((data[key] === "") || !(data[key].endsWith(".com") && (data[key]).includes("@"))) {
             warning.style.display = "block"
             emailInput.classList.add('warningInput')
             isBlank = true
